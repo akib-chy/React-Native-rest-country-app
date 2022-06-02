@@ -4,7 +4,8 @@ import React from "react";
 export default function Country({ country }) {
   return (
     <View style={styles.items}>
-      <Text style={styles.title}>Country {country.name?.common}</Text>
+      <Text style={styles.title}>Name: {country.name?.common}</Text>
+      <Text style={styles.title}>Capital: {country.capital}</Text>
       <Image
         source={{
           uri: country?.flags?.png,
